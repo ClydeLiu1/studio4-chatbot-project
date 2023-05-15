@@ -1,1 +1,5 @@
-
+"<Name> Update.txt"               -- for daily update
+(folder)chatBot:                          -- for the actual chatBot project
+        php file(s)
+        folders which is part of your website/project
+        
