@@ -2,8 +2,14 @@
 // Set your OpenAI API key here
 $openai_key = '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';
 
+if (!isset($_POST['input'])) {
+    //die('Error: No input data received');
+    $input = "Nice chatGPT.";
+} else {
+
 // Get user input from the form
 $input = $_POST['input'];
+}
 
 // Call the OpenAI API to generate a response
 $curl = curl_init();
@@ -39,9 +45,13 @@ if ($err) {
 } else {
   // Extract the response text from the JSON data
   $data = json_decode($response, true);
-  $output = $data['choices'][0]['text'];
-  
-  // Display the response in a text area
-  echo '<textarea>'.$input."\n".$output.'</textarea>';
+  if (!isset($data['choices']) || count($data['choices']) === 0) {
+    echo "Error: Unexpected API response";
+    var_dump($data); // Debugging information
+  } else {
+      $output = $data['choices'][0]['text'] ?? "Error: No response received";
+      // Display the response in a text area
+      echo '<textarea>'.$input."\n".$output.'</textarea>';
+  }
 }
 ?>
