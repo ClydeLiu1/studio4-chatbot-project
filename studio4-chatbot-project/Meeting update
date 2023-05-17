@@ -1,0 +1,253 @@
+# studio4-chatbot-project
+
+Meeting minutes 02/05/2023
+
+Status update:
+Clyde: Created repository in github 
+       Invited team members to join the project
+       Reserched some of the git tools and watched youtube video to get a general idea 
+       shared the previous pet food store project    
+Balaram:
+       Created github account and connected to project.
+       Research on project we are going to do.
+       Installed Visual Studio code. 
+
+
+Junqi:
+       Joined the project.
+       Basic understanding of ci and cd.
+       Done the define of scope.
+       explore the world.
+
+
+
+Pubudu:
+   joined to the github repository 
+   Fellow the links that mentioned about the CI/CD
+   Recap the things I leraned in inductory application development 
+    Installed Visual Studio code. 
+    
+
+
+       
+       Road broker: NO
+       Highlights: NA
+
+Action List:
+1 Keep exploring github and get unstanding of the CI CD concpet           (In progress)
+2 review the initial pet food store project and fix the bugs       (Needs review)
+3 Asking Chatgpt itself to get the answer how to connect the API to make a chatbot 
+  How to integrate it as the role of coustomer service with pet food store project      (Planned)
+4 Define the scope and backlog and assigning the backlogto the team     (In progress)
+      
+
+Achieved:
+        Created Github account.
+        Settle down the roles of each team member.
+        Published the define of scope.
+        Created the repository for the project in Github, Successfully invited team members to join.
+        Learned how to use github to add a file to share the progress and create repository.
+
+
+
+
+
+04/05/2023   Meeting update
+
+
+Clyde: Downloaded the visual studio code, Laragon,Laravel for using PHP to program our project
+       Pushed the message to Github test file using visual studio code directly
+       Keep exploring the Github CI CD, Shared the tutorial on Teams
+       Manage the intial project,fixing the bugs.
+       
+       
+       
+B:Done a research on how to pull and push from github and demonstrated to team.
+  Learned how to push and pull only or first pull then merge and at last push to git hub.
+  I also Learned how to merge the code and fix conflict.
+
+q: Downloaded the visual studio code,downloand the Gitlens(explore a variety of functions gradually)，
+   Git history(check the file history)
+   
+   done the scope for project :
+  1 Index page:It is used to visit the main page of the website, introduce the content and functions of the website, 
+                    as well as the latest activities and special offers and other information.
+                    The most important thing is to have a chatbot in this interface.
+
+  2 Product classification: used to access different types of pet food products, which can be classified according to pet type, brand, composition, etc., 
+                            so that users can quickly browse the required products.
+
+  3 Shopping cart: It is used to manage the products that the user has purchased. You can check the quantity of the products, modify the type and quantity of the products,
+                   check out the shopping cart and other functions.
+
+  4 Log in page: used to manage users' personal information, 
+                 including account settings, order inquiries, historical purchase records and other functions.
+
+Y:
+       
+       
+Achieved:
+Agreed with using visual code code to commit the work
+Push the test file to Github through visual studio code
+Explored the source control functions on Github
+Understood the tools for implement PHP project 
+
+
+Upcoming to do list 
+Find the resources or tutorial about how to make a chatbot through ChatGPT API 
+Talk about what should the chatbot looks like, make the UI design based on the initial project.
+Intergration with Github, Rollback changes to the pervious commit.
+Fixing the bugs make the initial project more pretty and combinative.
+Keep exploring Githun, Understand CI CD and other functions.
+
+
+9/05/2023 Stand up:
+Balaram:
+       Find the resources or tutorial about how to make a chatbot through ChatGPT API                    -YES
+       Talk about what should the chatbot looks like, make the UI design based on the initial project.
+       Intergration with Github, Rollback changes to the pervious commit.                                -YES
+       Fixing the bugs make the initial project more pretty and combinative.
+       Keep exploring Github, Understand CI CD and other functions.                                      -YES 
+       *Visulstudio functionalities: AI extention, extention for changing color in code, auto display    -Extra
+
+ Help:
+       1. xhs error while installing extension.
+
+Clyde:
+       Find the resources or tutorial about how to make a chatbot through ChatGPT API                    -YES
+       Catch up with what Balaram demonstrated: GitHub clone, pull, push                                 -YES
+       *Demonstrate how to run the petFoodStore project: run time environment, deployment, execute       -YES
+       How to use GitHub Issue to track the project                                                      -YES
+       Talk about what should the chatbot looks like, make the UI design based on the initial project.   
+       Intergration with Github, Rollback changes to the pervious commit.                                
+       Fixing the bugs make the initial project more pretty and combinative.
+       Keep exploring Github, Understand CI CD and other functions.                                       -YES
+       
+  Help:
+       NA
+
+Pubudu:
+       Tried to fix the existing bug in the petFoodStore website code                                    -YES
+              -- Solution to the fix is ready
+              -- Expecting the fix to be done by 16/05/2023
+       Recap what have been done during the petFoodStore project                                         -YES
+       
+       Find the resources or tutorial about how to make a chatbot through ChatGPT API 
+       Talk about what should the chatbot looks like, make the UI design based on the initial project.
+       Intergration with Github, Rollback changes to the pervious commit.
+       Fixing the bugs make the initial project more pretty and combinative.
+       Keep exploring Github, Understand CI CD and other functions.                                      -YES
+       
+  Help:
+       NA
+       
+Junqi:
+       Find the resources or tutorial about how to make a chatbot through ChatGPT API 
+       Talk about what should the chatbot looks like, make the UI design based on the initial project.
+       Intergration with Github, Rollback changes to the pervious commit.                                -YES
+       Fixing the bugs make the initial project more pretty and combinative.
+       Keep exploring Github, Understand CI CD and other functions.
+       Re-write project definition and the scope                                                         -YES
+       Continue exporing GitHub Actions, have got sample action working                                  -YES
+
+  Help:
+       NA
+
+
+
+
+
+09/05/2023  Meeting update
+
+ 
+
+Achieved:
+* Setted up runtime environment
+Laragon running and working perfectly
+Each person downloaded the source code 
+Created instructions on how to set up our pet food store project step by step, linked below.
+***https://github.com/ClydeLiu1/studio4-chatbot-project/blob/dbc87f87d95e06ac9e3766347b3a82610f0b89fa/pet-food-store%20instraction%20(1).docx
+Setted up SQL database 
+
+
+
+
+
+Actions list:
+Learn test automation by using PHP unit test 
+Create chatGPT developer account and watch the tutorial on how to connect the chatGPT api
+Define the chabot, come up with an idea for ui design.
+Call chatgpt API and test it.
+Get to know the Tools to test, for example Postman is one of the api testing tools.
+
+
+
+
+
+Clyde: Created chatGPT developer account
+Resubmitted the instruction of setting the pet food store deployment guide.
+Watch the tutorials about how to make chatbot by using chatgpt api
+
+
+      Can we use PHP to make chatbot? ---(Concern)
+     Help:
+     N/A
+     
+Junqi:Created chatGpt developer account,applying the api keys.
+      Research the PHP unittest.
+      
+      How to connect our project with chatGpt api?
+      Help:
+      N/A
+  
+ Pubudu:Create the interface for the chatbot.
+        I did some research on how to connect the api with ChatGPT.
+        
+        Help:
+             N/A
+             
+ Balaram: I have created chatgpt developer account.
+          I have done research on how use and create API key.
+          I have downloaded Laragon and setup database for petshop.
+          I also rollback to previous commit from another PC.
+          
+          Help:
+          N/A
+          
+          
+         
+         
+         
+ 11/05/2023   Meeting update 
+ 
+ Achieved:
+          ***Confirmed to call Chatgpt by using PHP.
+          We are able to get help from chatgpt to share the sample code for chatgpt.
+          Get to know the testing tool of Postman.
+          Get the API key from Chatgpt scusccefully. 
+          Settled down the UI design for chatbot with general idea.
+          Finished the demo of chatbot interface by Pubudu.
+          
+ Action List:
+          Make sample code provided by asking Chatgpt.
+          Explore the OpenAI model and prompts.
+          improve chatbot UI, learn how to train chatgpt to make specific mock dialog.
+          Each person needs to create separate branches at Github.
+          
+          
+ Clyde:  (Anything done share to here)(Please add achieved or actions list if you have other ideas)
+ Balaram: I have created separate branches at github.
+          I have done research on OpenaAI model and prompts.
+          I tried to create sample chatbot asking chatgpt but i was unable to fix OpenAI\Api.
+ Junqi:   Creaded the personal branches at github.
+          Tried to connect to the API in various ways by asking chatgpt, it still doesn't work.
+          Understand the use of chatgpt.
+ Pubudu:(Anything done share to here)
+ 
+
+
+
+##### !!!  Anyone please feel free to add anything about ideas
+
+
+
