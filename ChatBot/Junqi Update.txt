@@ -1,5 +1,3 @@
-16/05/2023
-
    1.Explore another way to try to create a chatgpt like web page.Follow the author's step,but can not work.
      website(https://laf.dev/app/o73o6n/function)
    2.upload the test.php file from visual studio,trying to design the UI for chatbot. 
