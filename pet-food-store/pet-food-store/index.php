@@ -87,6 +87,120 @@ include 'connection.php';
     
     </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pet Food Store Chatbot</title>
+  <style>
+    /* Chatbot container styles */
+    .chatbot-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    /* Chatbot header styles */
+    .chatbot-header {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Chatbot body styles */
+    .chatbot-body {
+      padding: 10px;
+      height: 330px;
+      overflow-y: scroll;
+    }
+
+    /* Chat message styles */
+    .message {
+      margin-bottom: 10px;
+    }
+
+    /* User message styles */
+    .user-message {
+      text-align: right;
+    }
+
+    /* Chatbot message styles */
+    .chatbot-message {
+      text-align: left;
+    }
+
+    /* Chat input styles */
+    .chat-input {
+      width: 100%;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="chatbot-header">
+      <h3>Chatbot</h3>
+    </div>
+    <div class="chatbot-body">
+      <!-- Chat messages will be displayed here -->
+    </div>
+    <div class="chat-input-container">
+      <input type="text" class="chat-input" placeholder="Type your message..." />
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Retrieve chat messages from the API and display them
+      function fetchChatMessages() {
+        // Make an API request to retrieve chat messages
+        $.ajax({
+          url: "api_endpoint_url",
+          method: "GET",
+          success: function(response) {
+            // Process the response and display chat messages
+            var messages = response.messages;
+            var chatContainer = $(".chatbot-body");
+
+            chatContainer.empty();
+
+            for (var i = 0; i < messages.length; i++) {
+              var message = messages[i];
+
+              if (message.sender === "user") {
+                chatContainer.append('<div class="message user-message">' + message.content + '</div>');
+              } else {
+                chatContainer.append('<div class="message chatbot-message">' + message.content + '</div>');
+              }
+            }
+
+            // Scroll to the bottom of the chat container
+            chatContainer.scrollTop(chatContainer.prop("scrollHeight"));
+          },
+          error: function() {
+            console.error("Failed to fetch chat messages.");
+          }
+        });
+      }
+
+      // Send user messages to the API and update the chat
+      function sendMessage(message) {
+        // Make an API request to send the user message
+        $.ajax({
+          url: "api_endpoint_url",
+          method: "POST",
+          data: { message: message },
+          success: function(response) {
+            // Fetch the updated chat messages
+            fetchChatMessages();
+         
 
 
 
