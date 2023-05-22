@@ -122,6 +122,12 @@ include 'connection.php';
             </div>
           </div>
      </section>
+     
+    <div id="chatbox"></div>
+    <form id="chat-form">
+        <input type="text" id="user-message" autocomplete="off" autofocus/>
+        <button type="submit">Send Message</button>
+    </form>
 
      <footer>
         <br>
