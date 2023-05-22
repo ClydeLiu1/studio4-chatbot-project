@@ -2,3 +2,7 @@
      website(https://laf.dev/app/o73o6n/function)
    2.upload the test.php file from visual studio,trying to design the UI for chatbot. 
    3.upload the test folder including Simple conversation with chabot and saveing message.
+22/05/2023
+   1. updated new progress about combine the chatbot with our project.
+   2. explore how to add the chatgpt api into project.
+   3. research about how to Use a Logo as project's Chatbot avatar.
