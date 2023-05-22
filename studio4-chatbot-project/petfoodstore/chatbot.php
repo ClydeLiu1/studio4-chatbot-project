@@ -87,7 +87,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
-    <h1>Chatbot</h1>
+    <h1>CHATBOT</h1>
 
     <label for="msg"><b>Message</b></label>
     <textarea placeholder="Type message.." name="msg" required></textarea>
