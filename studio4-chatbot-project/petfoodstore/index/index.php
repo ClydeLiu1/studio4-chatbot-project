@@ -13,7 +13,7 @@ include 'connection.php';
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" type="text/css" href="chatbot.css">
     <script type="text/javascript" src="js/chatbot.js"></script>
 
 
@@ -78,18 +78,47 @@ include 'connection.php';
             </div>
           </div>
      </section>
-
-     <section>
-  <button class="open-button" onclick="openForm()">Open Chat</button>
-
-  <div class="chat-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-      <h1>Chat</h1>
-      <label for="msg"><b>Message</b></label>
-      <textarea placeholder="Type message.." name="msg" required></textarea>
-      <button type="submit" class="btn">Send</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+     <form method="post" action="">
+        <label for="message">User Input:</label>
+        <input type="text" name="message" id="message" required>
+        <br>
+        <input type="submit" value="Send">
     </form>
+    <div id="chat-container" class="message-container">
+        <?php
+        require 'chatbot.php';
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $message = $_POST['message'];
+            $timestamp = date('Y-m-d H:i:s');
+
+            // User message HTML
+            $userMessageHTML = '<div class="user-message">
+                                    <p class="timestamp">' . $timestamp . '</p>
+                                    <p>You: ' . $message . '</p>
+                                </div>';
+            echo $userMessageHTML;
+
+            // Process the user message and generate the bot response
+            $botResponse = $chatbot->processMessage($message);
+
+            // Bot response HTML
+            $botResponseHTML = '<div class="bot-response">
+                                    <p class="timestamp">' . $timestamp . '</p>
+                                    <p>Bot: ' . $botResponse . '</p>
+                                </div>';
+            echo $botResponseHTML;
+        }
+        ?>
+    </div>
+    <button id="close-button" onclick="closeChat()">Close</button>
+
+    <script>
+        function closeChat() {
+            var chatContainer = document.getElementById("chat-container");
+            chatContainer.style.display = "none";
+        }
+    </script>
   </div>
 </section>
      <footer>
