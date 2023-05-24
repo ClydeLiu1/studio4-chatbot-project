@@ -9,5 +9,5 @@
 24/05/2023
    1. Created the public repository named "demo" in private account.
    2. Understand most of simple code in github actions example.
-   3. Learn practical application actions through Youtube.
+   3. Learnt practical application actions through Youtube.
    4. Continue to explore on actions.
