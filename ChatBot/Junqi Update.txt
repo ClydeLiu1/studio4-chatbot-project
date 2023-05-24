@@ -6,3 +6,8 @@
    1. updated new progress about combine the chatbot with our project.
    2. explore how to add the chatgpt api into project.
    3. research about how to Use a Logo as project's Chatbot avatar.
+24/05/2023
+   1. Created the public repository named "demo" in private account.
+   2. Understand most of simple code in github actions example.
+   3. Learn practical application actions through Youtube.
+   4. Continue to explore on actions.
