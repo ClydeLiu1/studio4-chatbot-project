@@ -17,3 +17,10 @@ Commit all the updates from visual studio code.
 * ChatGPT API working, Achieved chatbot page is able to communicate and interaction with ChatGPT.
  
 explore github actions.
+
+
+26/05/2023 Self status update 
+Tidy up the branch. delete and replace the unnecessary files.
+Downloaded the git history tracking on visual studio code.
+Independent chatbot file done, everyone can get access for only chatbot code.
+keep improving the ui part of chatbot interface.
