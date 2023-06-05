@@ -22,4 +22,5 @@
    1. Updated the document for workflow.docx file.
    2. Connected the laragon database with PowerShell and downloaded the MYSQL.
    3. updated the .yml file to continute the project to aotumatically deploy.
+   Get-Content "C:\laragon\www\pet-food-store\11.sql" | C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysql -u root
 
