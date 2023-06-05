@@ -40,9 +40,17 @@ $(document).ready(function () {
         }
     });
 
+    // Make the chatbot resizable
+    $(".chatbot-container").resizable({
+        handles: "n, e, s, w, ne, se, sw, nw"
+    });
+
+    // Make the chatbot draggable
+    $(".chatbot-container").draggable();
+
     // Pop-out functionality
     var chatbotContainer = $(".chatbot-container");
-    var popOutButton = $('<button class="pop-out-button">Chat</button>');
+    var popOutButton = $('<div class="pop-out-button"><i class="fas fa-comment"></i></div>');
 
     popOutButton.click(function () {
         chatbotContainer.toggleClass("pop-out");
