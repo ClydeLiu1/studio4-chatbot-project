@@ -66,3 +66,15 @@
           Help:
           I need help for how to run secret key from github to project code. 
           N/A
+          
+13/06/2023  Meeting update
+ 
+ Balaram: I have created the document for setup of secret key and values in github.
+          I have created autodeployment of API key on system enviroment(Thanks to the team to fix my asked help).
+          I created pull request and also new release branch.
+          We had a meeting on sunday to follow the process of creating API key secret.
+          We had a field visit to get experience of real work enviroment.
+          
+          Help: 
+          N/A
+          
