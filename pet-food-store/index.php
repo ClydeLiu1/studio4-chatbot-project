@@ -1,6 +1,3 @@
-<?php
-$apiKey = $_SERVER['API_KEY']?? getenv('API_KEY'); // Assuming the environment variable is set in the server configuration
-?>
 
 <!DOCTYPE html>
 <html lang="en">
