@@ -84,6 +84,7 @@ $apiKey = $_SERVER['API_KEY']?? getenv('API_KEY'); // Assuming the environment v
 <button id="toggle-chat">Chat</button>
 
  <div class="chat-window" id="chat-window">
+        <div class="chat-header">chat window</div>
         <div class="chat-header">Chat Now</div>
         <div class="chat-body">
          
