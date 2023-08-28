@@ -100,7 +100,7 @@ return chatHistory;
 }
 
 function getChatbotResponse(message, chatHistory) {
-var apiKey = '<?php echo $apiKey; ?>';
+//var apiKey = '<?php echo $apiKey; ?>';
 var endpoint = 'https://api.openai.com/v1/chat/completions';
 var model = 'gpt-3.5-turbo';
 
